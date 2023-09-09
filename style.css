@@ -46,6 +46,21 @@ nav ul{
     text-transform:uppercase;
 
 }
+
+#menu-btn{
+    width:3rem;
+    height:3rem;
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+
+}
+#menu-btn span{
+    width:100%;
+    height:3px;
+    background-color:white;
+    }
+
 main h1{
     text-align:center;
     color:orange;
@@ -92,4 +107,21 @@ main h1{
 
 .btn:hover{
     background-color: rgb(230, 157, 23);
+}
+@media (max-width:48rem) {
+    #main-header nav a{
+            display:none;  
+        }
+        main h1{
+            font-size:1.5rem;
+        }
+        #logo{
+            font-size:1rem;
+        }
+        nav ul{
+            display:block;
+                }
+    #latest-products ul{
+                grid-template-columns:1fr;
+    }
 }
